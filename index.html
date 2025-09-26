@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Dinushan - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="terminal">
+            <div class="terminal-header">
+                <span class="terminal-title">Database Connection Terminal</span>
+                <div class="terminal-controls">
+                    <span class="control minimize"></span>
+                    <span class="control maximize"></span>
+                    <span class="control close"></span>
+                </div>
+            </div>
+            <div class="terminal-body">
+                <div class="cmd-line" data-delay="0">$ Initializing connection to portfolio database...</div>
+                <div class="cmd-line" data-delay="800">$ Authenticating user credentials...</div>
+                <div class="cmd-line" data-delay="1600">$ Loading user profile: Pawan Dinushan</div>
+                <div class="cmd-line" data-delay="2400">$ Fetching skills data... [████████████] 100%</div>
+                <div class="cmd-line" data-delay="3200">$ Retrieving project information...</div>
+                <div class="cmd-line" data-delay="4000">$ Database connection established ✓</div>
+                <div class="cmd-line" data-delay="4800">$ Welcome to Pawan's Portfolio System</div>
+            </div>
+            <div class="loading-graphs">
+                <div class="graph-container">
+                    <div class="graph-title">System Performance</div>
+                    <div class="graph-bars">
+                        <div class="bar" style="--height: 70%; --delay: 1s"></div>
+                        <div class="bar" style="--height: 85%; --delay: 1.2s"></div>
+                        <div class="bar" style="--height: 60%; --delay: 1.4s"></div>
+                        <div class="bar" style="--height: 95%; --delay: 1.6s"></div>
+                        <div class="bar" style="--height: 80%; --delay: 1.8s"></div>
+                    </div>
+                </div>
+                <div class="progress-circle">
+                    <svg class="circular-progress" width="80" height="80">
+                        <circle cx="40" cy="40" r="35" stroke="#00ff41" stroke-width="3" fill="none" stroke-dasharray="220" stroke-dashoffset="220" class="progress-ring"></circle>
+                    </svg>
+                    <div class="progress-text">Loading...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="code-snippets">
+            <div class="code-line">const skills = ['Python', 'SQL', 'Data Analytics'];</div>
+            <div class="code-line">function analyzeData() { return insights; }</div>
+            <div class="code-line">SELECT * FROM opportunities WHERE passion = true;</div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <!-- Sticky Navigation -->
+        <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Pawan</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="dark-mode-toggle" id="darkModeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Pawan Dinushan</h1>
+                <p class="hero-subtitle">Computer Science Student | Tech Enthusiast | Problem Solver</p>
+                <p class="hero-description">Passionate about transforming ideas into innovative solutions through code and creativity.</p>
+                <div class="hero-buttons">
+                    <a href="Rathnaweera Patabendige Pawan Dinushan.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-handshake"></i> Let's Connect
+                    </a>
+                </div>
+            </div>
+            <div class="hero-avatar">
+                <div class="avatar-container">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-text">
+                        <p>Aspiring Computer Science student with hands-on experience in technical support, coding, and collaborative projects. Passionate about problem-solving, technology, and continuous learning.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <i class="fas fa-calendar"></i>
+                                <span>1.5+ Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-trophy"></i>
+                                <span>2 Certifications</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-code"></i>
+                                <span>5+ Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-timeline">
+                    <h3>Education Timeline</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Bachelor of Science (Hons) Computer Science with specialization in Data Analytics</h4>
+                            <p>Asia Pacific University (APU), Malaysia</p>
+                            <span class="timeline-date">2024 - Present (Expected 2027)</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>CBSE (Science Stream)</h4>
+                            <p>Indian Central School, Kuwait</p>
+                            <span class="timeline-date">2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>C Programming</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-microsoft"></i>
+                    <h3>Microsoft Office</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Video Editing</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-camera"></i>
+                    <h3>Photography</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <h3>Technical Support Trainee</h3>
+                        <h4>Future Technology System Company (FUTURETEC), Kuwait</h4>
+                        <span class="duration">1.5 Years</span>
+                        <ul class="achievements">
+                            <li>Provided technical assistance and troubleshooting for hardware/software issues</li>
+                            <li>Supported customer queries on-site and remotely</li>
+                            <li>Collaborated with teams to deliver timely IT solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects & Hackathons</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Library Management System</h3>
+                    <p>Database-driven system with analytics dashboard for tracking book circulation and inventory management.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>MySQL</span>
+                        <span>GUI</span>
+                    </div>
+                    <a href="https://github.com/CrypticWHO/Library-System" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Hospital Management System</h3>
+                    <p>Comprehensive healthcare data management system with patient analytics and operational insights.</p>
+                    <div class="project-tech">
+                        <span>Database</span>
+                        <span>SQL</span>
+                        <span>Analytics</span>
+                    </div>
+                    <a href="https://github.com/CrypticWHO/HMS" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Hackathon Participation</h3>
+                    <p>Collaborated in team-based coding competitions, applying programming and problem-solving skills to real-world challenges.</p>
+                    <div class="project-tech">
+                        <span>Teamwork</span>
+                        <span>Innovation</span>
+                        <span>Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Google Data Analytics Certificate</h3>
+                        <p class="cert-issuer">Google Career Certificates</p>
+                        <p class="cert-description">Professional certificate covering data analysis, visualization, and statistical analysis using tools like R, SQL, and Tableau.</p>
+                        <div class="cert-skills">
+                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">R Programming</span>
+                            <span class="skill-tag">Tableau</span>
+                        </div>
+                        <div class="cert-date">Ongoing</div>
+                    </div>
+                </div>
+                
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-signal"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>5G Pioneers Certificate</h3>
+                        <p class="cert-issuer">Industry Certification</p>
+                        <p class="cert-description">Advanced certification in 5G technology, network architecture, and next-generation wireless communication systems.</p>
+                        <div class="cert-skills">
+                            <span class="skill-tag">5G Technology</span>
+                            <span class="skill-tag">Networking</span>
+                            <span class="skill-tag">Wireless Systems</span>
+                        </div>
+                        <div class="cert-actions">
+                            <div class="cert-date">Completed 2024</div>
+                            <a href="https://www.credly.com/badges/38f08d98-1374-4c3e-9af7-bd196390867c" class="verify-btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Verify Badge
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extracurricular Section -->
+    <section id="extracurricular" class="extracurricular">
+        <div class="container">
+            <h2 class="section-title">Beyond Code</h2>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Esports</h3>
+                    <p>Active member in university esports community, competing in Valorant tournaments and team events.</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Sports</h3>
+                    <p>Passionate about cricket, badminton, football, volleyball, basketball, and table tennis.</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <h3>Photography</h3>
+                    <p>Capturing moments and exploring creative perspectives through digital photography.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:pawandinushan@gmail.com">pawandinushan@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <span>+60 145 735 230</span>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <a href="#" target="_blank">Connect with me</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/CrypticWHO" target="_blank">CrypticWHO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
